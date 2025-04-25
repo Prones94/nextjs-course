@@ -13,7 +13,7 @@ const SocialAuthForm = () => {
     const handleSignIn = async (provider : "github" | "google") => {
         try {
             await signIn(provider, {
-                callbackURL: ROUTES.HOME,
+                redirectTo: ROUTES.HOME,
                 redirect: false
             })
         } catch(error) {
