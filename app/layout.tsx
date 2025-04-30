@@ -31,7 +31,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: "DevFlow",
-    description: "A better version of Stack Overflow.",
+    description: "A community-driven paltform for asking and answering programming questions. Get help, share knowledge, and collaborate with developers from around the world. Explore topics in web development, mobile app development, algorithms, data structures, and more.",
     icons: {
         icon: '/images/site-logo.svg'
     }
@@ -46,6 +46,13 @@ const RootLayout = async ({
     return (
         <html lang="en"
               suppressHydrationWarning>
+        <head>
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+            />
+        </head>
         <SessionProvider session={session}>
             <body
                 className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
